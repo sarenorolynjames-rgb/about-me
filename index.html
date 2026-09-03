@@ -22,10 +22,17 @@
       <h2>Welcome</h2>
       <p>Welcome to my personal portfolio site. I am an Information Systems student passionate about web development, data management systems, and technology solutions.</p>
       
-      <figure>
-        <img src="https://via.placeholder.com/150" alt="Portrait photo of Rolyn James Sareño">
-        <figcaption>Rolyn James M. Sareño — Web Developer & Student</figcaption>
-      </figure>
+      <picture>
+        <source type="image/webp"
+                srcset="assets/hero-sm.webp 400w,
+                        assets/hero-md.webp 800w,
+                        assets/hero-lg.webp 1600w"
+                sizes="(max-width: 600px) 90vw, 800px">
+        <img src="assets/hero-md.jpg"
+             alt="Scenic mountain landscape overview"
+             width="800" height="450"
+             loading="lazy">
+      </picture>
     </article>
   </main>
 

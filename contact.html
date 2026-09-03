@@ -20,11 +20,30 @@
   <main>
     <section>
       <h2>Get in Touch</h2>
-      <p>Feel free to reach out for collaborations or project inquiries.</p>
-      <address>
-        Email: <a href="mailto:rolyn@example.com">rolyn@example.com</a><br>
-        Location: Philippines
-      </address>
+      <form action="#" method="POST">
+        <fieldset>
+          <legend>Contact me</legend>
+          <p>
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required minlength="2">
+          </p>
+          <p>
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required>
+          </p>
+          <p>
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9\-\s]{7,}">
+          </p>
+          <p>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </fieldset>
+      </form>
     </section>
   </main>
 
